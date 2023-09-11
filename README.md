@@ -3,6 +3,11 @@ lg-landscape-indicators
 
 LandGriffon Landscape Level Indicators
 
+Scripts to compute land use change indicatiors on earthengine.
+
+Requires an EarthEngine service account. Put service account json, project name,
+and export bucket in ``.env`` file.
+
 --------
 
 ## Setup
