@@ -1,0 +1,15 @@
+name: env-name
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - eeUtil=0.3.0
+    - geemap=0.25.0
+    - geopandas=0.13.2
+    - ipynb=0.5.1
+    - jupyter=1.0.0
+    - pydocstyle=6.3.0
+    - python-dotenv=1.0.0
