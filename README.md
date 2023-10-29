@@ -1,73 +1,28 @@
-lg-landscape-indicators
+Land, carbon and biodiversity data for supply chain impact calculation
 ==============================
 
-LandGriffon Landscape Level Indicators
+This repository contains code to generate the land, carbon and bidiversity datasets used for
+supply chain impact calculation in LandGriffon (https://landgriffon.com).
 
-Scripts to compute land use change indicatiors on earthengine.
+These data are available at: [REPOSITORY] and [REPOSITORY]
 
-Requires an EarthEngine service account. Put service account json, project name,
-and export bucket in ``.env`` file.
-
---------
+The methodology is documented at: [CITE]
 
 ## Setup
 
-### The environment
+These scripts use Google Earth Engine for comptuation. In order to run these scripts you will
+need to set up an Earth Engine [service account](https://developers.google.com/earth-engine/guides/service_account)
+and save the credentials in the `.env` file as follows:
 
-To run the notebooks you need to create an environment with the dependencies. There are two options:
-
-#### Docker
-
-If you have [docker](https://docs.docker.com/engine/install/) in your system,
-you run a jupyter lab server with:
-
-``` bash
-docker compose up --build
+```
+GEE_JSON={"type": "service_account","project_id": "YOUR-EE-PROJECT", ...}
+GEE_PROJECT=YOUR-EE-PROJECT
+GEE_BUCKET=YOUR-GCS-BUCKET
 ```
 
-And if you want to get into the container, use a terminal in jupyter lab,
-vscode remote development or run this command:
+## Notebooks
 
-```shell
-docker exec -it lg_landscape_indicators_notebooks /bin/bash
-```
+All scripts are in the notebooks directory.
 
-#### Conda environment
-
-Create the environment with:
-
-``` bash
-mamba env create -n lg_landscape_indicators -f environment.yml
-```
-
-This will create an environment called lg-landscape-indicators with a common set of dependencies.
-
-### `git` (if needed) and pre-commit hooks
-
-If this project is a new and standalone (not a module in a bigger project), you need to initialize git:
-
-``` bash
-git init
-```
-
-If the project is already in a git repository, you can skip this step.
-
-To install the **pre-commit hooks**, with the environment activated and in the project root directory, run:
-
-``` bash
-pre-commit install
-```
-
-## Update the environment
-
-If you need to update the environment installing a new package, you simply do it with:
-
-``` bash
-mamba install [package]  # or `pip install [package]` if you want to install it via pip
-```
-
-then update the environment.yml file so others can clone your environment with:
-
-``` bash
-mamba env export --no-builds -f environment.yml
-```
+The data for the `_04_validation_charts` notebook is provided in the repository and can be run
+without running the other scripts.
