@@ -12,7 +12,7 @@ The methodology is documented at: [CITE]
 
 These scripts use Google Earth Engine for comptuation. In order to run these scripts you will
 need to set up an Earth Engine [service account](https://developers.google.com/earth-engine/guides/service_account)
-and save the credentials in the `.env` file as follows:
+and save the credentials.json in the `.env` file as follows:
 
 ```
 GEE_JSON={"type": "service_account","project_id": "YOUR-EE-PROJECT", ...}
