@@ -35,7 +35,7 @@ See https://landgriffon.com/methodology for techniques for combining these resul
 
 ### License
 
-(c) Vizzuality 2023 CC-BY. This data is made available under a [Creative Commons Attribution 4.0 International license].
+(c) Vizzuality 2023 CC-BY. This data is made available under a Creative Commons Attribution 4.0 International [license](https://creativecommons.org/licenses/by/4.0/).
 
 ### Suggested citation
 
