@@ -4,9 +4,9 @@ Land, carbon and biodiversity data for supply chain impact calculation
 This repository contains code to generate the land, carbon and bidiversity datasets used for
 supply chain impact calculation in LandGriffon (https://landgriffon.com).
 
-These data are available at: [REPOSITORY] and [REPOSITORY]
+These data are available on [Source.coop](https://beta.source.coop/repositories/vizzuality/lg-land-carbon-data/description/) and [Zenodo](https://zenodo.org/records/10048050).
 
-The methodology is documented at: [CITE]
+The methodology is documented at https://www.biorxiv.org/content/10.1101/2023.11.01.565036v1
 
 ## Setup
 
